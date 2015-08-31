@@ -15,6 +15,10 @@ Please create a Pull Request if you solve any/all of them, or if you
 get stuck. I'm happy to give you some feedback and I'll update this
 README to share any interesting solutions.
 
+There is a file called test.rb that you can use to check your
+solutions. If everything works then it will print "OK" a lot. If it
+doesn't work then you might occasionally get weird errors.
+
 And now ladies and gentlemen, without any further ado, I give you The
 Challenges.
 
@@ -60,6 +64,9 @@ I didn't have time to talk about how to implement pure OO lists, so
 these challenges are all about how to implement them. Like most of
 these challenges, lists are easy to implement once you know how to do
 them. Until that point they may prove to be illusive.
+
+Implement solutions to this in a file called 'list.rb' if you want to
+run the tests.
 
 ### Challenge 4: implement a list that allows you to append items ###
 
@@ -110,6 +117,16 @@ Lists are really a special case of a hash, where the 'keys' are
 numbers in sequential order. We can replace our list implementation
 with a generic hash (or map, if you prefer) that allows us to store
 and retrieve values using some arbitrary key.
+
+Implement solutions in a file called 'map.rb' if you want to run the
+tests. I expect to be able to use it similar to the following:
+
+    map = Map.new
+    map[One] = True.new
+	map[False.new] = Seven
+
+    map[One] # => True.new
+    map[False.new] # => Seven
 
 ### Challenge 6: implement a Hash replacement ###
 ### Challenge 7: replace List with the Hash replacement ###
